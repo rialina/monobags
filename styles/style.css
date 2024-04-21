@@ -1,0 +1,128 @@
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #495057;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6c757d; /* Darken on hover */
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('your-hero-image.jpg'); /* Use your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners for softer edges */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+/* Product section styling */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.product {
+    background-color: #ffffff; /* White background for product cards */
+    border: 1px solid #dee2e6; /* Light border for separation */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.product:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+.product h3 {
+    margin: 0 0 10px;
+}
+
+.product img {
+    max-width: 100%; /* Ensure proper image scaling */
+    border-radius: 10px; /* Consistent rounded corners */
+}
+
+.product button {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #495057; /* Darken on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 20px;
+        font-size: 1.5em;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
