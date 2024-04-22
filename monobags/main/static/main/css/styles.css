@@ -1,0 +1,429 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.hero {
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #495057;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #6c757d; /* Darken on hover */
+}
+
+/* Hero section styling */
+.hero {
+    background-image: url('your-hero-image.jpg'); /* Use your hero image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 20px;
+    border-radius: 10px; /* Rounded corners for softer edges */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.login_form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login_form input[type="text"],
+.login_form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #343a40;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login_form button:hover {
+    background-color: #272b2e;
+}
+/*
+/* Product section styling */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.product {
+    background-color: #ffffff; /* White background for product cards */
+    border: 1px solid #dee2e6; /* Light border for separation */
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.product:hover {
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow on hover */
+}
+
+.product h3 {
+    margin: 0 0 10px;
+}
+
+.product img {
+    max-width: 100%; /* Ensure proper image scaling */
+    border-radius: 10px; /* Consistent rounded corners */
+}
+
+.product button {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #495057; /* Darken on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .hero {
+        padding: 60px 20px;
+        font-size: 1.5em;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
+}
+
+.product_content {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.product_content-button {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product_content-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gretings {
+    justify-content: center;
+    background-image: "/static/main/images/banner.png";
+}
+/* Style for the greetings container */
+.greetings {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the welcome heading */
+.greetings h1 {
+    font-size: 24px;
+    color: #333; /* You can choose your preferred color */
+}
+
+/* Style for the username paragraph */
+.greetings p {
+    font-size: 18px;
+    color: #666; /* You can choose your preferred color */
+}
+
+/* Style for the logout and login/signup links */
+.greetings a {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff; /* You can choose your preferred color */
+    text-decoration: none;
+}
+
+/* Style for the logout link */
+.greetings a[href*='logout'] {
+    color: #dc3545; /* You can choose your preferred color */
+}
+
+/* Style for the cart products container */
+
+.cart_products {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9; /* You can choose your preferred background color */
+}
+
+
+/* Style for the "Your carts" heading */
+.cart_products h2 {
+    font-size: 24px;
+    color: #333; /* You can choose your preferred color */
+}
+
+/* Style for each product content */
+.product_content {
+    display: inline-block; /* Display items in one line */
+    margin-right: 10px; /* Add spacing between items */
+    padding: 10px;
+    border: 1px solid #ddd; /* You can choose your preferred border color */
+    border-radius: 5px;
+    background-color: #fff; /* You can choose your preferred background color */
+    width: 200px; /* Set width for each item */
+}
+
+/* Style for the product name */
+.product_content h3 {
+    font-size: 16px;
+    color: #333; /* You can choose your preferred color */
+}
+
+/* Style for the product image */
+.product_content img {
+    display: block;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the hidden input */
+.product_content input[type="hidden"] {
+    display: none; /* Hide the hidden input */
+}
+
+/* Style for the buy button */
+.product_content .buy-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #fff; /* You can choose your preferred text color */
+    background-color: #000; /* Black background color for buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover style for the buy button */
+.product_content .buy-btn:hover {
+    background-color: #333; /* Darker background color when hovered */
+}
+/* Style for the cart container */
+.cart {
+    margin: 0 auto; /* Center align the cart container */
+    width: 50%; /* Set width for the cart container */
+    text-align: center; /* Center align text inside the cart container */
+}
+
+/* Style for the "Your Shopping Cart" heading */
+.cart h2 {
+    font-size: 24px;
+    color: #333; /* You can choose your preferred color */
+}
+
+/* Style for the cart items list */
+.cart .cart-items {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+/* Style for the total amount */
+.cart .cart-total {
+    margin-top: 20px;
+}
+
+/* Style for the total amount heading */
+.cart .cart-total h3 {
+    font-size: 18px;
+    color: #333; /* You can choose your preferred color */
+}
+
+/* Style for the total amount value */
+.cart .cart-total #total {
+    font-weight: bold;
+}
+
+/* Style for the checkout button */
+.cart .cart-total #checkout-btn {
+    margin-top: 10px;
+    padding: 12px 24px; /* Increase padding to make the button bigger */
+    font-size: 18px; /* Increase font size */
+    color: #fff; /* Text color */
+    background-color: #000; /* Black background color for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover style for the checkout button */
+.cart .cart-total #checkout-btn:hover {
+    background-color: #333; /* Darker background color when hovered */
+}
+

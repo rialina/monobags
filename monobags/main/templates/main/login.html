@@ -1,0 +1,23 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<h1>Login</h1>
+<div class="login_form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+        <a href="{% url 'signup' %}">Dont have Account Create</a>
+    </form>
+</div>
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} form__submit-message" id="msg" role="alert">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% endblock %}

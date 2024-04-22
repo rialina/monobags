@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bag Store</title>
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script type = "text/javascript" src="{% static 'main/js/script.js' %}"></script>
+
+<header>
+    <h1>Welcome to Our Bag Store!</h1>
+</header>
+
+<nav>
+    <a href="{% url 'main' %}">Home</a>
+    <a href="#products">Products</a>
+    <a href="{% url 'signup' %}">Sign up</a>
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'cart' %}" class="cart-icon"> Shopping Cart</a>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

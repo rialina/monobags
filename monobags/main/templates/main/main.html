@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="greetings">
+    {% if request.user.is_authenticated %}
+    <h1>Welcome!</h1>
+    <p>{{ request.user.username }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'signup' %}">Signup</a>
+    {% endif %}
+</div>
+    
+
+    <section class="products" id="products">
+        {% for serv in services %}
+            <form method="post" action="/add_to_cart/">
+                {% csrf_token %}
+                <div class="product">
+                    <h3>{{ serv.name }}</h3>
+                    <img src="{{ serv.photo.url }}" alt="{{ serv.name }}" style="width:100%;">
+                    <p>{{ serv.description }}</p>
+                    <input type="hidden" name="product_id" value="{{ serv.id }}">
+     
+
+                    <button class="buy-btn" data-product-id="{{ serv.id }}">{{ serv.price }}</button>
+                </div>
+            </form>
+        {% endfor %}
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Bag Store. All rights reserved.</p>
+        <p>Contact us at: email@example.com</p>
+    </footer>
+ 
+{% endblock %}
+
